@@ -89,7 +89,7 @@ In preperation for further labs we need to install the F5 Automation Toolchain a
     > **Note**: If the F5-CLI Docker container is not running, start it with the 'docker start f5-cli' command
     
     ```bash
-    for in in {6..7} 
+    for i in {6..7} 
     do
         # authenticate to the BIG-IP
         docker exec -it f5-cli f5 login --authentication-provider bigip --host 10.1.1.$i --user admin --password $bigip_pwd
